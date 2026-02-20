@@ -46,7 +46,7 @@ const Navbar = () => {
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-[1440px] mx-auto h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[158px]">
+        <div className="max-w-360 mx-auto h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-27 xl:px-39.5">
           {/* Logo */}
           <span className="text-white font-display font-bold text-[24px] md:text-[32px] cursor-pointer select-none">
             {" "}
@@ -73,14 +73,15 @@ const Navbar = () => {
           {/* Right side */}
           <div className="flex items-center gap-3">
             {/* Contact Button — desktop */}
-            <button
-              onClick={() => scrollTo("footer")}
-              className="hidden md:flex items-center gap-[6px] button-container bg-white/60 hover:bg-white transition-colors duration-200 cursor-pointer"
+            <Link
+              href="https://api.whatsapp.com/send?phone=6586687123&text=Hi%20Summer!%20I%20came%20across%20your%20website%20and%20I%20wish%20to%20learn%20more%20about%20your%20service.%20Thanks!"
+              target="_blank"
             >
-              <span className="text-black text-[16px]">Contact</span>
-              <GoArrowRight className="text-black" size={22} />
-            </button>
-
+              <button className="hidden md:flex items-center gap-1.5 button-container bg-white/60 hover:bg-white transition-colors duration-200 cursor-pointer">
+                <span className="text-black text-[16px]">Contact</span>
+                <GoArrowRight className="text-black" size={22} />
+              </button>
+            </Link>
             {/* Hamburger — mobile only */}
             <button
               onClick={() => setMenuOpen((o) => !o)}
