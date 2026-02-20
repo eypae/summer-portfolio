@@ -24,7 +24,7 @@ const About = () => {
       {/* Main About Content */}
       <div
         ref={ref}
-        className="max-w-360 mx-auto px-28 xl:px-39.5 relative mb-8"
+        className="max-w-360 mx-auto px-4  md:px-12 lg:px-27 xl:px-39.5 relative mb-8"
       >
         <div className="flex items-start gap-12">
           {/* Left Content */}
@@ -74,14 +74,14 @@ const About = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-              className="flex flex-wrap items-center gap-6 md:gap-8 mt-10 xl:mt-16 min-w-[486px]"
+              className="flex flex-wrap items-center gap-6 md:gap-8 mt-6 lg:mt-10 xl:mt-16 min-w-[428px] lg:min-w-[486px]"
             >
               {stats.map((stat) => (
                 <div key={stat.label} className="flex flex-col gap-1.5">
-                  <p className="text-[28px] md:text-[32px] text-black tracking-[-0.5px] font-bold">
+                  <p className="text-[28px] lg:text-[32px] text-black tracking-[-0.5px] font-bold">
                     {stat.value}
                   </p>
-                  <p className="text-[14px] md:text-[16px] text-black -tracking-[0.5px] whitespace-normal">
+                  <p className="text-[14px] lg:text-[16px] text-black -tracking-[0.5px] whitespace-normal">
                     {stat.label}
                   </p>
                 </div>
