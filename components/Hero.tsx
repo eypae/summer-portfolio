@@ -33,7 +33,7 @@ const Hero = () => {
             transition={{ duration: 0.9, ease: [0.25, 0.1, 0.25, 1] }}
             className="text-white leading-none font-bold"
             style={{
-              fontSize: "clamp(48px, 7.6vw, 110px)",
+              fontSize: "clamp(42px, 7.6vw, 110px)",
             }}
           >
             SUMMER XIA

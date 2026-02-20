@@ -46,7 +46,7 @@ body {
     @apply px-4;
     @apply sm:px-8;
     @apply md:px-12;
-    @apply lg:px-6.75;
-    @apply xl:px-9.75;
+    @apply lg:px-27;
+    @apply xl:px-39.5;
   }
 }

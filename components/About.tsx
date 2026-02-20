@@ -26,13 +26,14 @@ const About = () => {
         ref={ref}
         className="max-w-360 mx-auto global-padding relative mb-8"
       >
-        <div className="flex items-start gap-12">
+        <div className="flex flex-col items-center sm:flex-row sm:items-start sm:gap-12">
           {/* Left Content */}
           <motion.div
             ref={ref}
             initial={{ opacity: 0, y: -30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: "easeOut" }}
+            className="mb-8 sm:mb-0"
           >
             <MiniHeader label="ABOUT ME" />
             <p className="text-[#0c0407] text-[14px] leading-[1.4] tracking-[-0.1px] mt-6 font-normal">
@@ -74,7 +75,7 @@ const About = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-              className="flex flex-wrap items-center gap-4 md:gap-8 mt-6 lg:mt-10 xl:mt-16 min-w-[428px] lg:min-w-[486px]"
+              className="flex flex-wrap items-center gap-4 md:gap-8 mt-6 lg:mt-10 xl:mt-16 sm:min-w-[428px] lg:min-w-[486px]"
             >
               {stats.map((stat) => (
                 <div key={stat.label} className="flex flex-col gap-1.5">
@@ -96,7 +97,7 @@ const About = () => {
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
             className="shrink-0 relative overflow-hidden bg-[#bfcacf] z-10 
             min-[1352px]:-mt-40 min-[1198px]:-mt-35 min-[1136px]:-mt-20
-            w-[275px] h-[311px] min-[1136px]:w-[363px] min-[1136px]:h-[410px] 
+            w-[320px] h-[361px] sm:w-[275px] sm:h-[311px] min-[1136px]:w-[363px] min-[1136px]:h-[410px] 
             min-[1198px]:w-[425px] min-[1198px]:h-[480px] xl:w-[442px] xl:h-[499px]"
           >
             <Image

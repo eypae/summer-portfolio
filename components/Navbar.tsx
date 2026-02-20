@@ -46,7 +46,7 @@ const Navbar = () => {
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-360 mx-auto h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-27 xl:px-39.5">
+        <div className="max-w-360 mx-auto h-full flex items-center justify-between global-padding">
           {/* Logo */}
           <span className="text-white font-display font-bold text-[24px] md:text-[32px] cursor-pointer select-none">
             {" "}
