@@ -10,7 +10,7 @@ const MiniHeader = ({ label, dark = false }: MiniHeaderProps) => {
   return (
     <div className="flex items-center gap-1.5">
       <span
-        className={`text-[16px] tracking-[-0.5px] font-bold ${dark ? "text-white" : "text-black"}`}
+        className={`text-[16px] tracking-[-0.5px] font-bold ${dark ? "text-white" : "text-black !important"}`}
       >
         {label}
       </span>
