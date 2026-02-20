@@ -97,7 +97,7 @@ const About = () => {
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
             className="shrink-0 relative overflow-hidden bg-[#bfcacf] z-10 
             min-[1352px]:-mt-40 min-[1198px]:-mt-35 min-[1136px]:-mt-20
-            w-[320px] h-[361px] sm:w-[275px] sm:h-[311px] min-[1136px]:w-[363px] min-[1136px]:h-[410px] 
+            w-[275px] h-[311px] min-[1136px]:w-[363px] min-[1136px]:h-[410px] 
             min-[1198px]:w-[425px] min-[1198px]:h-[480px] xl:w-[442px] xl:h-[499px]"
           >
             <Image
