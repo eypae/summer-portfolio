@@ -32,4 +32,10 @@ body {
     @apply tracking-wide;
     @apply font-normal;
   }
+
+  .button-container {
+    @apply px-4;
+    @apply py-2.5;
+    @apply font-bold;
+  }
 }

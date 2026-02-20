@@ -18,3 +18,8 @@ export const awardsBase = [
     title: "SALESPERSONS ACHIEVEMENTS\nAWARD (SILVER)",
   },
 ];
+
+export const navItems = [
+  { label: "About Me", id: "about" },
+  { label: "Services", id: "services" },
+];
