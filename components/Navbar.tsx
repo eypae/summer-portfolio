@@ -76,8 +76,9 @@ const Navbar = () => {
             <Link
               href="https://api.whatsapp.com/send?phone=6586687123&text=Hi%20Summer!%20I%20came%20across%20your%20website%20and%20I%20wish%20to%20learn%20more%20about%20your%20service.%20Thanks!"
               target="_blank"
+              className="hidden md:flex"
             >
-              <button className="hidden md:flex items-center gap-1.5 button-container bg-white/60 hover:bg-white transition-colors duration-200 cursor-pointer">
+              <button className=" items-center gap-1.5 button-container bg-white/60 hover:bg-white transition-colors duration-200 cursor-pointer">
                 <span className="text-black text-[16px]">Contact</span>
                 <GoArrowRight className="text-black" size={22} />
               </button>

@@ -41,4 +41,12 @@ body {
     @apply font-bold;
     @apply cursor-pointer;
   }
+
+  .global-padding {
+    @apply px-4;
+    @apply sm:px-8;
+    @apply md:px-12;
+    @apply lg:px-6.75;
+    @apply xl:px-9.75;
+  }
 }
