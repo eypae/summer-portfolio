@@ -3,10 +3,11 @@ import React from "react";
 import { motion } from "motion/react";
 import heroBackground from "@/public/images/hero-background.jpeg";
 import Image from "next/image";
+import VerticalLines from "./VerticalLines";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-[500px] sm:h-[600px] md:h-[700px] xl:h-[794px] overflow-hidden">
+    <section className="relative w-full h-125 sm:h-150 md:h-175 xl:h-198.5 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -17,11 +18,7 @@ const Hero = () => {
         <div className="bg-black/50 inset-0 absolute"></div>
       </div>
 
-      {/* Decorative vertical lines — desktop only */}
-      <div className="hidden lg:block absolute inset-0 max-w-360 mx-auto pointer-events-none">
-        <div className="absolute xl:left-30.5 lg:left-20 top-0 bottom-0 border-l border-white/30" />
-        <div className="absolute xl:right-30.5 lg:right-20 top-0 bottom-0 border-l border-white/30" />
-      </div>
+      <VerticalLines color="white" />
 
       {/* Horizontal line — full section width, not capped by max-w */}
       <div className="absolute left-0 right-0 top-77.5 border-t border-white/30 pointer-events-none" />

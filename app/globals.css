@@ -34,8 +34,11 @@ body {
   }
 
   .button-container {
+    @apply inline-flex;
+    @apply items-center;
     @apply px-4;
     @apply py-2.5;
     @apply font-bold;
+    @apply cursor-pointer;
   }
 }

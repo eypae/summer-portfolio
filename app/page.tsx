@@ -10,7 +10,7 @@ const Page = () => {
       <Navbar />
       <main>
         <Hero />
-        {/* <About /> */}
+        <About />
       </main>
       <Footer />
     </div>

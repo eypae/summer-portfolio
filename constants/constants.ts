@@ -23,3 +23,9 @@ export const navItems = [
   { label: "About Me", id: "about" },
   { label: "Services", id: "services" },
 ];
+
+export const stats = [
+  { value: "100+", label: "Satisfied Clients" },
+  { value: "5+", label: "Years of Experience" },
+  { value: "99%", label: "Client Satisfaction Rate" },
+];
