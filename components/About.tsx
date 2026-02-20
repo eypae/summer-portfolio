@@ -22,10 +22,7 @@ const About = () => {
     <section id="about" className="relative bg-white py-8">
       <VerticalLines color="black" />
       {/* Main About Content */}
-      <div
-        ref={ref}
-        className="max-w-360 mx-auto global-padding relative mb-8"
-      >
+      <div ref={ref} className="max-w-360 mx-auto global-padding relative mb-8">
         <div className="flex flex-col items-center sm:flex-row sm:items-start sm:gap-12">
           {/* Left Content */}
           <motion.div
@@ -35,7 +32,7 @@ const About = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="mb-8 sm:mb-0"
           >
-            <MiniHeader label="ABOUT ME" />
+            <MiniHeader label="ABOUT ME" dark={false} />
             <p className="text-[#0c0407] text-[14px] leading-[1.4] tracking-[-0.1px] mt-6 font-normal">
               A client-focused property consultant dedicated to turning your
               real estate goals into reality. With proven results as a Top 25
@@ -100,10 +97,7 @@ const About = () => {
             w-[275px] h-[311px] min-[1136px]:w-[363px] min-[1136px]:h-[410px] 
             min-[1198px]:w-[425px] min-[1198px]:h-[480px] xl:w-[442px] xl:h-[499px]"
           >
-            <Image
-              src={summerHeadshot}
-              alt="Summer Xia Headshot"
-            />
+            <Image src={summerHeadshot} alt="Summer Xia Headshot" />
           </motion.div>
         </div>
       </div>
