@@ -22,7 +22,7 @@ const About = () => {
     <section id="about" className="relative bg-white py-8">
       <VerticalLines color="black" />
       {/* Main About Content */}
-      <div ref={ref} className="max-w-360 mx-auto global-padding relative mb-8">
+      <div ref={ref} className="max-w-360 mx-auto global-padding relative mb-12">
         <div className="flex flex-col items-center sm:flex-row sm:items-start sm:gap-12">
           {/* Left Content */}
           <motion.div

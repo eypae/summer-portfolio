@@ -46,8 +46,18 @@ const PropertyCard = ({
         </div>
       </div>
 
-      {/* Address / Price slot — fixed height, no layout shift */}
-      <div className="mt-2 overflow-hidden relative h-7.25">
+      {/* Mobile: show name + price stacked statically */}
+      <div className="mt-2 md:hidden">
+        <p className="text-black truncate font-normal font-display leading-7.25 text-[20px] md:text-[24px]">
+          {property.name}
+        </p>
+        <p className="text-black truncate font-normal font-display leading-7.25 text-[20px] md:text-[24px]">
+          {property.price}
+        </p>
+      </div>
+
+      {/* Desktop: Address / Price slot — fixed height, no layout shift */}
+      <div className="mt-2 overflow-hidden relative hidden md:block h-7.25">
         <motion.p
           className="text-black font-display truncate absolute inset-x-0 font-medium text-[20px] md:text-[24px] leading-7.25"
           animate={{ opacity: hovered ? 0 : 1, y: hovered ? -29 : 0 }}
@@ -63,6 +73,11 @@ const PropertyCard = ({
           {property.price}
         </motion.p>
       </div>
+
+      {/* Property Type — always visible */}
+      <p className="text-black text-[14px] md:text-[16px] font-normal">
+        {property.type}
+      </p>
     </motion.div>
   );
 };
