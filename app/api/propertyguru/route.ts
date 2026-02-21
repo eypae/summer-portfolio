@@ -20,7 +20,7 @@ export async function POST() {
       : chromium.args,
     defaultViewport: viewport,
     executablePath:
-      process.env.CHROME_EXECUTABLE_PATH || (await chromium.executablePath()),
+      process.env.CHROME_EXECUTABLE_PATH || (await chromium.executablePath('@/opt/chromium')),
     headless: "shell",
   });
 
