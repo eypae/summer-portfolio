@@ -12,7 +12,11 @@ const PropertyBadge = ({
 }) => {
   return (
     <div className="bg-[#f4f4f4] border border-[#ccc] flex items-center gap-2.5 px-2.5 py-1.5">
-      {icon === "bed" ? <PiBedDuotone /> : <PiBathtubDuotone />}
+      {icon === "bed" ? (
+        <PiBedDuotone className="text-black" />
+      ) : (
+        <PiBathtubDuotone className="text-black" />
+      )}
       <span className="text-black text-[12px] font-normal">{label}</span>
     </div>
   );
