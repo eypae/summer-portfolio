@@ -21,7 +21,9 @@ export async function POST() {
     defaultViewport: viewport,
     executablePath:
       process.env.CHROME_EXECUTABLE_PATH ||
-      (await chromium.executablePath("@/opt/chromium")),
+      (await chromium.executablePath(
+        "https://summer-portfolio-test.s3.ap-southeast-2.amazonaws.com/chromium-v143.0.4-pack.x64.tar",
+      )),
     headless: "shell",
   });
   const page = await browser.newPage();
