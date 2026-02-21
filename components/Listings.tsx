@@ -20,7 +20,7 @@ const Listings = () => {
   const isHeaderInView = useInView(headerRef, { once: true, margin: "-100px" });
 
   return (
-    <section id="listings" className="relative bg-white pt-[96px] pb-[72px]">
+    <section id="listings" className="relative bg-white pt-[32px] lg:pt-[96px] pb-[72px]">
       <VerticalLines color="black" />
       <div className="max-w-360 mx-auto global-padding relative mb-8">
         {/* Section Header */}
@@ -38,14 +38,7 @@ const Listings = () => {
 
           {/* Main Title */}
           <div>
-            <h2
-              className="text-black leading-none tracking-tighter"
-              style={{
-                fontFamily: "'Montserrat', sans-serif",
-                fontWeight: 900,
-                fontSize: "clamp(36px, 5vw, 56px)",
-              }}
-            >
+            <h2 className="text-black leading-none tracking-tight font-black text-[clamp(36px,5vw,56px)]">
               FEATURED
               <br />
               LISTINGS
@@ -54,10 +47,7 @@ const Listings = () => {
 
           {/* Description */}
           <div>
-            <p
-              className="text-[#0c0407] text-[14px] leading-[1.4] tracking-[-0.1px]"
-              style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400 }}
-            >
+            <p className="text-[#0c0407] text-[14px] leading-[1.4] tracking-[-0.1px] font-normal">
               Explore available properties that showcase quality and
               potential—making your search for the ideal home or investment
               seamless.
