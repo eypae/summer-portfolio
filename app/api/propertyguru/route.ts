@@ -21,9 +21,7 @@ export async function POST() {
     defaultViewport: viewport,
     executablePath:
       process.env.CHROME_EXECUTABLE_PATH ||
-      (await chromium.executablePath(
-        "/opt/chromium/chromium-v143.0.4-pack.x64.tar",
-      )),
+      (await chromium.executablePath("/opt/chromium")),
     headless: "shell",
   });
   const page = await browser.newPage();
