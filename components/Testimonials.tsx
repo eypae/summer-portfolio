@@ -107,14 +107,14 @@ const Testimonials = () => {
             onClick={() => go(-1)}
             className="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200"
           >
-            <FaAngleLeft size={24} />
+            <FaAngleLeft size={24} className="text-black"/>
           </button>
 
           <button
             onClick={() => go(1)}
             className="w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200"
           >
-            <FaAngleRight size={24} />
+            <FaAngleRight size={24} className="text-black"/>
           </button>
         </div>
       </div>
