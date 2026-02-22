@@ -22,7 +22,10 @@ const About = () => {
     <section id="about" className="relative bg-white py-8">
       <VerticalLines color="black" />
       {/* Main About Content */}
-      <div ref={ref} className="max-w-360 mx-auto global-padding relative mb-12">
+      <div
+        ref={ref}
+        className="max-w-360 mx-auto global-padding relative mb-12"
+      >
         <div className="flex flex-col items-center sm:flex-row sm:items-start sm:gap-12">
           {/* Left Content */}
           <motion.div
@@ -36,10 +39,10 @@ const About = () => {
             <p className="text-[#0c0407] text-[14px] leading-[1.4] tracking-[-0.1px] mt-6 font-normal">
               A client-focused property consultant dedicated to turning your
               real estate goals into reality. With proven results as a Top 25
-              ERA Achiever, I combine personalized care with cutting-edge
-              marketing—virtual tours, professional staging, and data-driven
-              analysis—to ensure your property journey is seamless and
-              rewarding.
+              ERA Achiever, I combine personalized care with innovative
+              marketing strategies—virtual tours, professional staging, and
+              data-driven analysis—to ensure your property journey is seamless
+              and rewarding.
             </p>
 
             <Link

@@ -49,4 +49,15 @@ body {
     @apply lg:px-27;
     @apply xl:px-39.5;
   }
+
+  .section-settings {
+    @apply relative;
+    @apply pt-[32px];
+    @apply lg:pt-[96px];
+    @apply pb-[40px];
+  }
+
+  .section-settings:last-child {
+    @apply pb-[132px];
+  }
 }

@@ -22,12 +22,9 @@ const Listings = () => {
   const isHeaderInView = useInView(headerRef, { once: true, margin: "-100px" });
 
   return (
-    <section
-      id="listings"
-      className="relative bg-white pt-[32px] lg:pt-[96px] pb-[72px]"
-    >
+    <section id="listings" className="bg-white section-settings">
       <VerticalLines color="black" />
-      <div className="max-w-360 mx-auto global-padding relative mb-8">
+      <div className="max-w-360 mx-auto global-padding relative">
         {/* Section Header */}
         <motion.div
           ref={headerRef}
