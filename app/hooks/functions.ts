@@ -1,14 +1,34 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
+
+// export const useWindowWidth = () => {
+//   const [width, setWidth] = useState(() =>
+//     typeof window !== "undefined" ? window.innerWidth : 1440,
+//   );
+//   useEffect(() => {
+//     const handler = () => setWidth(window.innerWidth);
+//     window.addEventListener("resize", handler);
+//     return () => window.removeEventListener("resize", handler);
+//   }, []);
+//   return width;
+// };
 
 export const useWindowWidth = () => {
-  const [width, setWidth] = useState(() =>
-    typeof window !== "undefined" ? window.innerWidth : 1440,
-  );
-  useEffect(() => {
-    const handler = () => setWidth(window.innerWidth);
+  const [width, setWidth] = useState<number | null>(null);
+
+  useLayoutEffect(() => {
+    const handler = () => {
+      // More stable than window.innerWidth on iOS
+      setWidth(document.documentElement.clientWidth);
+    };
+
+    handler(); // run immediately before paint
     window.addEventListener("resize", handler);
-    return () => window.removeEventListener("resize", handler);
+
+    return () => {
+      window.removeEventListener("resize", handler);
+    };
   }, []);
+
   return width;
 };
 
