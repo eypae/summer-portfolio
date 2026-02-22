@@ -133,10 +133,10 @@ const Navbar = () => {
               href="https://api.whatsapp.com/send?phone=6586687123&text=Hi%20Summer!%20I%20came%20across%20your%20website%20and%20I%20wish%20to%20learn%20more%20about%20your%20service.%20Thanks!"
               target="_blank"
             >
-              <button className="mt-4 flex items-center gap-2.5 px-6 py-3 bg-white cursor-pointer">
-                <span className="text-black text-[24px] font-bold">
+              <button className="mt-4 button-container bg-white">
+                <p className="text-black text-[24px] font-bold">
                   Contact
-                </span>
+                </p>
                 <GoArrowRight className="text-black" size={32} />
               </button>
             </Link>

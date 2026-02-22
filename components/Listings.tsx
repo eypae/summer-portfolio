@@ -24,7 +24,7 @@ const Listings = () => {
   return (
     <section id="listings" className="bg-white section-settings">
       <VerticalLines color="black" />
-      <div className="max-w-360 mx-auto global-padding relative">
+      <div className="global-padding relative">
         {/* Section Header */}
         <motion.div
           ref={headerRef}
@@ -54,7 +54,7 @@ const Listings = () => {
               potential—making your search for the ideal home or investment
               seamless.
             </p>
-            <Link
+            {/* <Link
               href={
                 "https://www.propertyguru.com.sg/property-for-sale?listedById=14203520&isCommercial=false&listingType=sale&locale=en&_gl=1*p8klyu*_ga4_au*MTA3NjI4MDI0OC4xNzcxMjE5ODcx*_ga4_ga*NTMyMDc3NTM2LjE3NzEyMTk4NzE.*_ga4_ga_0HGK3QZS7D*czE3NzE2NjE0NTgkbzckZzEkdDE3NzE2NjIzMjIkajYwJGwwJGgw"
               }
@@ -64,9 +64,11 @@ const Listings = () => {
               View All Listings
               <span className="absolute bottom-0 left-0 w-0 h-px bg-[#3366CC] duration-300 transition-all group-hover:w-full" />
               <GoArrowRight className="text-[#3366CC]" size={16} />
-            </Link>
+            </Link> */}
           </div>
         </motion.div>
+
+        {/* Properties Grid — 1 col → 2 col → 3 col */}
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-8">
           {properties.map((property, index) => (
             <PropertyCard
@@ -76,6 +78,29 @@ const Listings = () => {
             />
           ))}
         </div>
+
+        {/* View All Listings button */}
+        <Link
+          href={
+            "https://www.propertyguru.com.sg/property-for-sale?listedById=14203520&isCommercial=false&listingType=sale&locale=en&_gl=1*p8klyu*_ga4_au*MTA3NjI4MDI0OC4xNzcxMjE5ODcx*_ga4_ga*NTMyMDc3NTM2LjE3NzEyMTk4NzE.*_ga4_ga_0HGK3QZS7D*czE3NzE2NjE0NTgkbzckZzEkdDE3NzE2NjIzMjIkajYwJGwwJGgw"
+          }
+          target="_blank"
+        >
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="flex justify-center mt-10 xl:mt-[60px]"
+          >
+            <button className="bg-white border border-[#ccc] button-container gap-2 hover:bg-gray-50 transition-colors duration-200">
+              <p className="text-black text-[16px] font-display">
+                View All Listings
+              </p>
+              <GoArrowRight size={20} />
+            </button>
+          </motion.div>
+        </Link>
       </div>
     </section>
   );

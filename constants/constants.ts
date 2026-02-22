@@ -126,3 +126,27 @@ export const services = [
     hoverImage: teamwork,
   },
 ];
+
+export const testimonials = [
+  {
+    id: 1,
+    text: "Summer Xia is a remarkable realtor. Her dedication and commitment to finding us the perfect home were truly outstanding. She went above and beyond to ensure we were satisfied with our investment. We couldn't be happier with our real estate journey guided by Summer. She's not just a realtor, she's a friend and a trusted advisor.",
+    name: "Lim Mei Ling",
+    role: "Homebuyer",
+    rating: 5,
+  },
+  {
+    id: 2,
+    text: "As first-time homebuyers, we did not know what to do, but Summer's knowledge and support made everything feel effortless. Her commitment to ensuring we made a sound investment was evident every step of the way.",
+    name: "Chua Kai Jun",
+    role: "Homebuyer",
+    rating: 5,
+  },
+  {
+    id: 3,
+    text: "Working with Summer Xia was an absolute delight. She patiently listened to our needs and preferences, tirelessly searching for properties that aligned perfectly with our requirements. Summer doesn't just sell houses; she creates lasting relationships built on trust and genuine care.",
+    name: "Tan Wei Jie",
+    role: "Homeseller",
+    rating: 5,
+  },
+];

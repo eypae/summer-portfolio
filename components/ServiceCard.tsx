@@ -19,7 +19,9 @@ const ServiceCard = ({ service, index, href }: ServiceCardProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: index * 0.12, ease: "easeOut" }}
-      className="relative overflow-hidden cursor-pointer border border-[#ccc] flex flex-col group min-h-[350px]"
+      className={`relative overflow-hidden border border-[#ccc] flex flex-col group min-h-[350px] ${
+        href ? "cursor-pointer" : "cursor-default"
+      }`}
     >
       {/* Optional link overlay */}
       {href && (

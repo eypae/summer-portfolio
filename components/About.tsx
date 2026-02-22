@@ -19,13 +19,10 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="relative bg-white py-8">
+    <section className="relative bg-white py-8">
       <VerticalLines color="black" />
       {/* Main About Content */}
-      <div
-        ref={ref}
-        className="max-w-360 mx-auto global-padding relative mb-12"
-      >
+      <div ref={ref} className="global-padding relative mb-12">
         <div className="flex flex-col items-center sm:flex-row sm:items-start sm:gap-12">
           {/* Left Content */}
           <motion.div
@@ -92,6 +89,7 @@ const About = () => {
 
           {/* Right – Headshot */}
           <motion.div
+            id="about"
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}

@@ -11,9 +11,9 @@ const Services = () => {
   const isHeaderInView = useInView(headerRef, { once: true, margin: "-100px" });
 
   return (
-    <section className="bg-white section-settings">
+    <section id="services" className="bg-white section-settings">
       <VerticalLines color="black" />
-      <div className="max-w-360 mx-auto global-padding relative">
+      <div className="global-padding relative">
         <SectionHeader
           label="SERVICES"
           title={
@@ -24,6 +24,7 @@ const Services = () => {
           }
           description="Complete marketing solutions—professional visuals, virtual tours, digital advertising and agent networks - all working together to get the best price for your property."
         />
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 xl:gap-8">
           {services.map((service, index) => {
             // If videography icon, pass Instagram href

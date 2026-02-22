@@ -43,11 +43,21 @@ body {
   }
 
   .global-padding {
+    @apply max-w-360;
+    @apply mx-auto;
     @apply px-4;
     @apply sm:px-8;
     @apply md:px-12;
     @apply lg:px-27;
     @apply xl:px-39.5;
+  }
+
+  .testimonial-card-text {
+    @apply text-black;
+    @apply text-[14px];
+    @apply md:text-[16px];
+    @apply leading-[1.4];
+    @apply tracking-[-0.5px];
   }
 
   .section-settings {
@@ -58,6 +68,7 @@ body {
   }
 
   .section-settings:last-child {
-    @apply pb-[132px];
+    @apply md:pb-[132px];
+    @apply pb-[72px];
   }
 }
