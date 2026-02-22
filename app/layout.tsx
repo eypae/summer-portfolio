@@ -37,6 +37,21 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Summer Xia • Your Personal Property Consultant",
   description: "The profile of Summer Xia, Property Consultant.",
+  openGraph: {
+    title: "Summer Xia • Your Personal Property Consultant",
+    description: "The Website of Summer Xia, Property Consultant.",
+    url: "https://summer-xia.vercel.app/",
+    siteName: "Summer Xia",
+    images: [
+      {
+        url: "https://summer-xia.vercel.app/images/summer-logo.png", // must be in /public
+        width: 666,
+        height: 703,
+        alt: "Summer Xia - Your Personal Property Consultant",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
