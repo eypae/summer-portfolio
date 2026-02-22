@@ -11,7 +11,7 @@ const Services = () => {
   const isHeaderInView = useInView(headerRef, { once: true, margin: "-100px" });
 
   return (
-    <section id="services" className="bg-white section-settings">
+    <section id="services" className="bg-white section-settings scroll-mt-16 md:scroll-mt-20">
       <VerticalLines color="black" />
       <div className="global-padding relative">
         <SectionHeader

@@ -19,7 +19,7 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="relative bg-white py-8">
+    <section id="about" className="scroll-mt-16 md:scroll-mt-20 relative bg-white py-8">
       <VerticalLines color="black" />
       {/* Main About Content */}
       <div ref={ref} className="global-padding relative mb-12">
@@ -89,7 +89,6 @@ const About = () => {
 
           {/* Right – Headshot */}
           <motion.div
-            id="about"
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
