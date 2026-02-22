@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "Summer Xia",
     images: [
       {
-        url: "https://summer-xia.vercel.app/images/summer-logo.png", // must be in /public
+        url: "https://summer-xia.vercel.app/images/summer-headshot.jpg", // must be in /public
         width: 666,
         height: 703,
         alt: "Summer Xia - Your Personal Property Consultant",
