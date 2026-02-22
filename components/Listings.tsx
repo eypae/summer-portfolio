@@ -97,7 +97,7 @@ const Listings = () => {
               <p className="text-black text-[16px] font-display">
                 View All Listings
               </p>
-              <GoArrowRight size={20} />
+              <GoArrowRight size={20} className="text-black"/>
             </button>
           </motion.div>
         </Link>
